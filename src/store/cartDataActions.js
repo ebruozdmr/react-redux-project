@@ -54,7 +54,7 @@ export const sendData = (cart) => {
         }
       );
       console.log(response);
-      if (response.status !== "200") {
+      if (response.status !== 200) {
         throw new Error("Sending cart data failed.");
       }
     };
